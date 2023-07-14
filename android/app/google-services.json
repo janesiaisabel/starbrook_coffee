@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1080026945693",
+    "project_id": "hahaha-a1181",
+    "storage_bucket": "hahaha-a1181.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080026945693:android:54fe62fb34465ab92c1c74",
+        "android_client_info": {
+          "package_name": "com.example.strawbrew_crew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080026945693-1gg09uau04fv5t45f38p5sb2vnmcmjlj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb31VDo1I_WgQ0bsrt3j2LVBHPOfHUA7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080026945693-1gg09uau04fv5t45f38p5sb2vnmcmjlj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
