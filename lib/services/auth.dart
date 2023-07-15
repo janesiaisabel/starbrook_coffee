@@ -51,7 +51,7 @@ class AuthService {
 
       //create a new document for new user with the uid
       await DatabaseService(uid: user!.uid)
-          .updateUserData('0', 'New crew member', 100);
+          .updateUserData('0', 'New guest', 100);
 
       return _userfromFirebaseUser(user);
     } catch (e) {

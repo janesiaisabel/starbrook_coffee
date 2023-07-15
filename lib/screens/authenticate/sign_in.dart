@@ -31,7 +31,7 @@ class _SignInState extends State<SignIn> {
             appBar: AppBar(
               backgroundColor: Colors.brown[400],
               elevation: 0.0,
-              title: const Text('Sign in to StrawBrew'),
+              title: const Text('Sign in to StarBrook'),
               actions: [
                 TextButton.icon(
                   onPressed: () {
@@ -44,6 +44,10 @@ class _SignInState extends State<SignIn> {
               ],
             ),
             body: Container(
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/bgsignin.png'),
+                        fit: BoxFit.cover)),
                 padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 50.0),
                 child: Form(

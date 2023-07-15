@@ -31,7 +31,7 @@ class _RegisterState extends State<Register> {
             appBar: AppBar(
               backgroundColor: Colors.brown[400],
               elevation: 0.0,
-              title: const Text('Sign up to StrawBrew'),
+              title: const Text('Sign up to StarBrook'),
               actions: [
                 TextButton.icon(
                   onPressed: () {
@@ -44,6 +44,10 @@ class _RegisterState extends State<Register> {
               ],
             ),
             body: Container(
+                decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/bgregister.png'),
+                        fit: BoxFit.cover)),
                 padding: const EdgeInsets.symmetric(
                     vertical: 20.0, horizontal: 50.0),
                 child: Form(

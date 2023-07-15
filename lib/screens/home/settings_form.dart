@@ -36,7 +36,7 @@ class _SettingsFormState extends State<SettingsForm> {
                 child: Column(
                   children: [
                     const Text(
-                      'Update your brew settings',
+                      'Update your brew preferences',
                       style: TextStyle(fontSize: 18.0),
                     ),
                     const SizedBox(height: 20.0),
