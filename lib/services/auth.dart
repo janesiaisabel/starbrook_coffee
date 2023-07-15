@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:strawbrew_crew/models/user.dart';
+import 'package:strawbrew_crew/services/database.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
@@ -47,6 +48,11 @@ class AuthService {
       UserCredential result = await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
       User? user = result.user;
+
+      //create a new document for new user with the uid
+      await DatabaseService(uid: user!.uid)
+          .updateUserData('0', 'New crew member', 100);
+
       return _userfromFirebaseUser(user);
     } catch (e) {
       print(e.toString());
